@@ -12,7 +12,7 @@ The powershell that ships with windows is very old. To update to the latest and 
 ## Font
 
 - Download the nerd font from here, which is the same as the default powershell font, but with added icons: https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip
-- Click ctrl+r to open the run window and run `c:/windows/fonts` then drag the new font files into that window to install them.
+- Click win+r to open the run window and run `c:/windows/fonts` then drag the new font files into that window to install them.
 - Go to Terminal > Settings > Defaults > Apperance
 - Change `Font Face` to `CascydiaCove Nerd Font Mono`
 
