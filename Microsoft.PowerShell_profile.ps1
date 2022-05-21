@@ -9,19 +9,19 @@ if ($host.Name -eq 'ConsoleHost')
 Import-Module -Name Terminal-Icons
 oh-my-posh init pwsh --config E:\Git\Oh-My-Posh-Theme\elmegaard.omp.json | Invoke-Expression
 
-# Setup PSReadline
+### Setup PSReadline
+# Make tab behavior like bash use tab to navigate
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete # Make tab completion work like bash
 Set-PSReadlineOption -BellStyle None # Disable annoying beep on error
 
-# Enable prediction when typing use right arrow to complete
+# Enable prediction when typing use arrows to navigate
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView # Change to InlineView for only one suggestion but less intrusive
-Set-PSReadLineOption -EditMode Windows
 
-# Custom aliases
+### Custom aliases
 Set-Alias ex explorer.exe
 
-# Custom functions
+### Custom functions
 function New-Link ($from, $to) {
     New-Item -Path $to -ItemType SymbolicLink -Value $from
 }
