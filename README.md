@@ -3,7 +3,7 @@
 ## Font
 
 - Download the nerd font from here: https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip
-- Go to Terminal > Settings > Defaults > Apperance > Font Face
+- Go to Terminal > Settings > Defaults > Apperance
 - Change `Font Face` to `CascydiaCove Nerd Font Mono`
 
 ## Installation
