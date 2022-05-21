@@ -10,7 +10,7 @@ if ((Test-Admin) -eq $false) {
         # tried to elevate, did not work, aborting
     }
     else {
-        Start-Process powershell.exe -Verb RunAs -ArgumentList ('-noprofile -file "{0}" -elevated' -f ($myinvocation.MyCommand.Definition))
+        Start-Process pwsh.exe -Verb RunAs -ArgumentList ('-noprofile -file "{0}" -elevated' -f ($myinvocation.MyCommand.Definition))
     }
     exit
 }
