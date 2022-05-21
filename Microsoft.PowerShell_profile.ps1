@@ -13,6 +13,11 @@ oh-my-posh init pwsh --config E:\Git\Oh-My-Posh-Theme\elmegaard.omp.json | Invok
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete # Make tab completion work like bash
 Set-PSReadlineOption -BellStyle None # Disable annoying beep on error
 
+# Enable prediction when typing
+Set-PSReadLineOption -PredictionSource History
+Set-PSReadLineOption -PredictionViewStyle ListView
+Set-PSReadLineOption -EditMode Windows
+
 # Custom aliases
 Set-Alias ex explorer.exe
 
