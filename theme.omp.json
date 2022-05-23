@@ -123,14 +123,6 @@
           "type": "aws"
         },
         {
-          "background": "#ffff66",
-          "foreground": "#111111",
-          "powerline_symbol": "\ue0b0",
-          "style": "powerline",
-          "template": " \uf0ad ",
-          "type": "root"
-        },
-        {
           "background": "#00897b",
           "background_templates": ["{{ if gt .Code 0 }}#e91e63{{ end }}"],
           "foreground": "#ffffff",
