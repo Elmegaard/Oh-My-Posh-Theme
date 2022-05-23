@@ -21,3 +21,6 @@ The powershell that ships with windows is very old. To update to the latest and 
 Run the `install.ps1` script in the root of this git directory to install all requirements and setup a symbolic link from the powershell profile to the profile in this directory.
 
 The script requires the new version of powershell so open a new terminal as administrator and run it from there.
+
+## Making it your own
+I recommend forking this repository and then you can make your own changes to `Microsoft.PowerShell_profile.ps1` and `theme.omp.json` as you see fit.
