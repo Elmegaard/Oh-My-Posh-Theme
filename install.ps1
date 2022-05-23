@@ -15,9 +15,13 @@ if ((Test-Admin) -eq $false) {
     exit
 }
 
+[Environment]::SetEnvironmentVariable("OhMyPoshThemeDirectory", $PSScriptRoot, "User")
+
 winget install oh-my-posh
 Install-Module -Name Terminal-Icons -Repository PSGallery
 Install-Module PSReadLine -AllowPrerelease -Force
 
 $profileDir = split-path $profile
 New-Item -Path "$profileDir/Microsoft.PowerShell_profile.ps1" -ItemType SymbolicLink -Value "$PSScriptRoot/Microsoft.PowerShell_profile.ps1"
+
+Read-Host

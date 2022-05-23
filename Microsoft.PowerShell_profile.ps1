@@ -7,7 +7,8 @@ if ($host.Name -eq 'ConsoleHost')
 }
 
 Import-Module -Name Terminal-Icons
-oh-my-posh init pwsh --config E:\Git\Oh-My-Posh-Theme\elmegaard.omp.json | Invoke-Expression
+$themeDir = [Environment]::GetEnvironmentVariable("OhMyPoshThemeDirectory", "User")
+oh-my-posh init pwsh --config "$themeDir\theme.omp.json" | Invoke-Expression
 
 ### Setup PSReadline
 # Make tab behavior like bash use tab to navigate
