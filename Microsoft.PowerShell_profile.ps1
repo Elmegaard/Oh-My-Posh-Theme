@@ -21,8 +21,14 @@ Set-PSReadLineOption -PredictionViewStyle ListView # Change to InlineView for on
 
 ### Custom aliases
 Set-Alias ex explorer.exe
+Set-Alias pull GitPull
 
 ### Custom functions
 function New-Link ($from, $to) {
     New-Item -Path $to -ItemType SymbolicLink -Value $from
+}
+
+function GitPull() {
+    git pull --rebase
+    git submodule update
 }
